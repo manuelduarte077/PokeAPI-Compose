@@ -10,7 +10,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
 
 object PokemonAPI {
-    
+
     interface PokemonAPI {
         @GET("pokemon?limit=151")
         fun loadPokemon(): Call<PokemonList>
